@@ -5,12 +5,7 @@ pipeline {
       steps {
         parallel(
           "initialisePEWorkspace": {
-            sh 'echo "script doing project workspace initialisation tasks...."'
-            
-          },
-          "initOpScriptWorkspace": {
-            sh 'echo "script doing scripts workspace initialisation tasks...."'
-            
+            sh 'echo "script doing project workspace initialisation tasks...."' 
           }
         )
       }
