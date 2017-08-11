@@ -9,7 +9,7 @@ pipeline {
             
           },
           "initOpScriptWorkspace": {
-            git(url: 'https://github.com/thoiong/my-acdsl-demo.git', credentialsId: 'becd7b32ed23b97ee61aee9f968667b0e7c33f5a')
+            git(url: 'https://github.com/thoiong/my-acdsl-demo.git', credentialsId: 'thoiong')
             
           }
         )
