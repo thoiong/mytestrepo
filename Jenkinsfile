@@ -5,11 +5,11 @@ pipeline {
       steps {
         parallel(
           "initialisePEWorkspace": {
-            sh 'echo "script doing workspace initialisation tasks...."'
+            sh 'echo "script doing project workspace initialisation tasks...."'
             
           },
           "initOpScriptWorkspace": {
-            git(url: 'https://github.com/thoiong/my-acdsl-demo.git', credentialsId: 'thoiong')
+            sh 'echo "script doing scripts workspace initialisation tasks...."'
             
           }
         )
